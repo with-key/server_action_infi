@@ -2,6 +2,10 @@
 import { UserAPIResponse } from "@/types/User";
 
 export const getUsers = async (offset: number, limit: number) => {
+  /**
+   * @description
+   * 서버 실행 여부 확인
+   */
   console.log("server에서 실행됨");
   try {
     const url = `https://api.slingacademy.com/v1/sample-data/users?offset=${offset}&limit=${limit}`;
